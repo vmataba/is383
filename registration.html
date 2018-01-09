@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='js/js.js'></script>
+        <link rel='stylesheet' type='text/css' href='css/style.css'/>
+    </head>
+    <body>
+        <div class="center reg_form" id="reg_form">
+            <center><h1 class="reg_form_tittle">USER REGISTRATION FORM</h1></center>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <input type='text' placeholder="Enter your First name" id="fname" class="reg_input" onkeyup="onFnameTyped()"/>
+                        </td>
+                        <td>
+                            <label id="fname_error" class="reg_label_error"></label>
+                        </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <input type='text' placeholder="Enter your Middle name" id="mname" class="reg_input" onkeyup="onMnameTyped()"/>
+                         </td>
+                         <td>
+                             <label id="mname_error" class="reg_label_error"></label>
+                         </td>
+                    </tr>
+                     <tr>
+                         <td>
+                              <input type='text' placeholder="Enter your Last name" id="lname" class="reg_input" onkeyup="onLnameTyped()"/>
+                         </td>
+                         <td>
+                             <label id="lname_error" class="reg_label_error"></label>
+                         </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <input type="text" placeholder="Enter your email address" id="email" class="reg_input" onkeyup="onEmailTyped()"/>
+                         </td>
+                         <td>
+                             <label id="email_error" class="reg_label_error"></label>
+                         </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <input type="text" placeholder='Enter your phone number' id="phone" class="reg_input" onkeyup="onPhoneTyped()"/>
+                         </td>
+                         <td>
+                             <label id='phone_error' class="reg_label_error"></label>
+                         </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <label  class='gender_main'>Gender</label><br>
+                             <span class="gender">
+                                 <label>Male</label>
+                                 <input type='radio' name='gender' id="male" onclick="onGenderSelected()"/>
+                             </span>
+                             <span  class="gender">
+                                 <label>Female</label>
+                                 <input type="radio" name='gender' id='female' onclick="onGenderSelected()"/>
+                             </span>
+                         </td>
+                         <td>
+                             <label id="gender_error" class="reg_label_error"></label>
+                         </td>
+                    </tr>
+                </table>
+            </form>
+            <button id="btn_register" onclick="register()">Register</button>
+        </div>
+    </body>
+</html>
