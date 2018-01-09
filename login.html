@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/js.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="center login_form">
+            <form>
+                <center><h1 id="login_title">LOGIN FORM</h1></center>
+                <label id="username_error" class='label_error'>Username is required</label>
+                <input type="text" placeholder="Enter username" id="username" class="form_input" onkeypress="restoreUsername()"/><br>
+                <label id="password_error" class='label_error'>Password is required</label>
+                <input type="password" placeholder="Enter Password"  id="password" class="form_input" onkeypress="restorePassword()"/><br>
+            </form>
+            <button id="login_button" class="form_input login_button" onclick='login()'>Login</button>
+        </div>
+    </body>
+</html>
