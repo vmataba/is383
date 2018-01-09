@@ -1,0 +1,99 @@
+
+.center{
+    margin-left: auto;
+    margin-right: auto
+}
+
+/**For Login Form**/
+.login_form{
+    background-color: #43A447;
+    width: 250px;
+    height: 500px
+
+}
+
+.form_input{
+    height: 40px;
+    border: solid 1px white;
+    border-radius:1px;
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
+}
+
+.login_button{
+    color: white;
+    background-color: #43A447;
+    font-weight: bold
+}
+
+#login_title{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:fantasy
+}
+
+.label_error{
+    display: none;
+    color: red;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/**For Registration Form**/
+.reg_form{
+    background-color: #2196F3;
+    width: 700px;
+    height: 500px
+
+}
+
+.reg_input {
+    height: 30px;
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 8px
+}
+
+.gender{
+    height: 10px;
+    width: 50px;
+    font-family: monospace;
+    color: white;
+    margin-left: 10px;
+}
+.gender_main{
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.reg_form_tittle{
+    color: white;
+    font-weight: bold
+}
+#btn_register{
+    background-color: white;
+    color: blue;
+    width: 365px;
+    height: 30px;
+    margin-left: 10px;
+    display: block;
+    margin-top: 10px
+
+}
+.reg_label_error{
+    color: red;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 15px
+
+}
+
+
+
