@@ -36,7 +36,7 @@ function login() {
     //stores boolean value for string password
     var is_strong = password.search("[A-Z]") >= 0 && password.search("[0-9]") >= 0
             && password.length >= 8 && password.search("[!@#$%^&*()_+=-?/>.,<:;']") >= 0;
-    
+
 
     if (is_strong) {
         alert(message_strong);
@@ -114,6 +114,16 @@ function register() {
 
     if (male == female) {
         gender_error_obj.innerHTML = "No gender selected";
+        return;
+    }
+
+    //checks if everything is fine and alert a message
+    var is_ok = fname_error_obj.innerHTML === '' && mname_error_obj.innerHTML === ''
+            && lname_error_obj.innerHTML === '' && phone_error_obj.innerHTML === ''
+            && email_error_obj.innerHTML === '' && gender_error_obj.innerHTML === '';
+
+    if (is_ok) {
+        alert("Everything is OK");
     }
 
 
